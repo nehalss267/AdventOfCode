@@ -25,7 +25,7 @@ class Day1_Password {
     }
 
     public static void main(String[] args) {
-        File input = new File("F:/1-sem4/DSA/CodingChallenges/AdventOfCode/input.txt");
+        File input = new File("C:/CodingChallenges/AdventOfCode/input.txt");//place input.txt file path
         int currentPositionOfLines = 0;
         String data = " ";
         try (Scanner sc = new Scanner(input)) {
