@@ -4,7 +4,6 @@ import java.io.*;
 public class Day2_invalidID {
     static int count = 0;
     static Long sum = 0L;
-    // static Set<Long> invalidIDList = new HashSet<>();
     static List<Long> invalidIDList = new ArrayList<>();
 
     public static void doubleSequence(String data) {
