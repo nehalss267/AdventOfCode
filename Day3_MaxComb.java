@@ -1,15 +1,16 @@
 import java.util.*;
 //yet to complete
 public class Day3_MaxComb{
-List<Integer>list=new ArrayList<>();
+static List<Integer>list=new ArrayList<>();
 public static void maxComb(String data){
  int len=data.length();
- int max=Math.MIN_VALUE;
+ int max= Integer.MIN_VALUE;
+ int lInt=0;
  String l=" ",r=" ";
  for(int i=0;i<=len;i++){
   for(int j=0;j<=i;j++){
     l=data.substring(i,j);
-    int lInt=Integer.parseInt(l);
+    lInt=Integer.parseInt(l);
     if(lInt>max){
       max=lInt;
     }
@@ -18,7 +19,7 @@ public static void maxComb(String data){
  list.add(lInt);
 }
 public static void main(String args[]){
-maxComb(String data);
+maxComb("899965");
 int sum=0;
 System.out.println(list);
 for(int elem: list){
